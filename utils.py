@@ -37,12 +37,6 @@ def docopt_cmd(func):
             print(e)
             return
 
-        # except SystemExit:
-            # The SystemExit exception prints the usage for --help
-            # We do not need to do the print here.
-
-            return
-
         return func(self, opt)
 
     fn.__name__ = func.__name__
